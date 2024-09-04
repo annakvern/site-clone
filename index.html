@@ -30,14 +30,11 @@
             <li><a href="https://www.friluftsframjandet.se/detta-gor-vi/forskolor-och-skolor/">Förskola & skola</a></li>
         </ul>
         <!-- Only for smaller screens-->
-        <!-- <a
-          href="https://www.friluftsframjandet.se/lat-aventyret-borja/hitta-aventyr/"
-          ><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</a
-        >
-        <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/"
-          ><i class="fa-regular fa-user"></i> Logga in</a
-        >
-        <i class="fa-solid fa-bars"></i> -->
+        <div class="mobile-nav">
+            <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/hitta-aventyr/" class="mobile-nav-child"><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</a>
+            <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/" class="mobile-nav-child"><i class="fa-regular fa-user"></i> Logga in</a>
+            <i class="fa-solid fa-bars" class="mobile-nav-child"></i>
+        </div>
       </nav>
       <div class="buttons">
         <button type="menu-button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</button>
@@ -66,7 +63,6 @@
       <section class="form">
         <h2>Hitta äventyr</h2>
         <div class="form-elements">
-            <label for="form-section"></label>
             <select name="type" id="type">
                 <option value="" disabled selected>Typ av äventyr</option>
                 <option value="type-o1">Alla verksamhetsområden</option>
