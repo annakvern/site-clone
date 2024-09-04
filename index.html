@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="se">
+  <head>
+        <title>Låt äventyret börja - Friluftsfrämjandet</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <!-- Import FontAwesome Icon kit -->
+        <script
+        src="https://kit.fontawesome.com/7a67359ae7.js"
+        crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Google fonts, Garamond and Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
+    </head>
+  <body>
+    <header>
+      <img src="/assets/images/ff-logo.png" alt="logotype" id="logo"/>
+      <nav>
+        <ul class="menu">
+            <li><a href="https://www.friluftsframjandet.se/lat-aventyret-borja/var-verksamhet/">Våra äventyr</a></li>
+            <li><a href="https://www.friluftsframjandet.se/medlem/">Medlem</a></li>
+            <li><a href="https://www.friluftsframjandet.se/lat-aventyret-borja/kunskap--guider/">Kunskap & Inspiration</a></li>
+            <li><a href="https://www.friluftsframjandet.se/ledare/">Ledare</a></li>
+            <li><a href="https://www.friluftsframjandet.se/detta-gor-vi/forskolor-och-skolor/">Förskola & skola</a></li>
+        </ul>
+        <!-- Only for smaller screens-->
+        <!-- <a
+          href="https://www.friluftsframjandet.se/lat-aventyret-borja/hitta-aventyr/"
+          ><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</a
+        >
+        <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/"
+          ><i class="fa-regular fa-user"></i> Logga in</a
+        >
+        <i class="fa-solid fa-bars"></i> -->
+      </nav>
+      <div class="buttons">
+        <button type="menu-button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</button>
+        <button type="menu-button" class="btn btn-primary"><i class="fa-regular fa-user"></i> Logga in</button>
+      </div>
+    </header>
+    <main>
+      <section class="video-background">
+           <div class="video-container">
+            <video controls>
+            <source
+                src="/assets/videos/3217937-hd_1920_1080_24fps.mp4"
+                type="video/mp4"
+            />
+            Your browser does not support the video tag.
+            </video>
+           </div>
+      </section>
+      <section class="content">
+        <h1>Äventyret är nära</h1>
+        <p>
+          Vi skapar roliga, trygga och lärorika äventyr – i skogen, på vattnet,
+          snön, isen och på fjället. Året runt och för alla.
+        </p>
+      </section>
+      <section class="form">
+        <h2>Hitta äventyr</h2>
+        <div class="form-elements">
+            <label for="form-section"></label>
+            <select name="type" id="type">
+                <option value="" disabled selected>Typ av äventyr</option>
+                <option value="type-o1">Alla verksamhetsområden</option>
+                <option value="type-o2">Cykel</option>
+                <option value="type-o3">Fjällturer</option>
+                <option value="type-o4">Friluftsevent</option>
+                <option value="type-o5">Friluftskunskap</option>
+            </select>
+            <select name="targetgroup" id="targetgroup">
+                <option value="" disabled selected>Passar för</option>
+                <option value="type-o1">Alla målgrupper</option>
+                <option value="type-o2">Barn 0-6</option>
+                <option value="type-o3">Barn 7-12</option>
+                <option value="type-o4">Familj</option>
+                <option value="type-o5">Funktionsnedsättning</option>
+            </select>
+            <select name="location" id="location">
+                <option value="" disabled selected>Plats</option>
+                <option value="type-o1">Alla platser</option>
+                <option value="type-o2">Blekinge län</option>
+                <option value="type-o3">Dalarnas län</option>
+                <option value="type-o4">Gotlands län</option>
+                <option value="type-o5">Gävleborgs län</option>
+                <option value="type-o1">Hallands län</option>
+                <option value="type-o2">Jämtlands län</option>
+                <option value="type-o3">Jönköpings län</option>
+                <option value="type-o4">Kalmar län</option>
+                <option value="type-o5">Kronoberg län</option>
+                <option value="type-o5">Norrbottens län</option>
+                <option value="type-o5">Skåne län</option>
+                <option value="type-o5">Stockholms län</option>
+                <option value="type-o5">Södermanlands län</option>
+            </select>
+            <input type="text" placeholder="Sök">
+        </div>
+      </section>
+      <section class="adventures">
+        <div class="card-container">
+            <div class="card">
+                <img src="/assets/images/kajak.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tjäröfestivalen 30/8 - 1/9 2024</h5>
+                    <p class="card-text">Syd / Pågår mellan 30 aug - 1 sep</p>
+                    <button type="book-activity" class="btn btn-primary">BOKA</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/images/harsyra_kajsaljungberg-136268296370.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ekorrarna Blentarp-Sövde HT2024</h5>
+                    <p class="card-text">Blentarp-Sövde / Pågår mellan 31 aug - 30 nov</p>
+                    <button type="book-activity" class="btn btn-primary">BOKA</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/images/0skogsmulleochskogensvarld1-96865334.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Skogsmulle</h5>
+                    <p class="card-text">Laholm / Pågår mellan 7 sep - 9 nov</p>
+                    <button type="book-activity" class="btn btn-primary">BOKA</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/images/vandring155024196.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vandring</h5>
+                  <p class="card-text">Höstvandring till Stenhyddan 14 sep</p>
+                  <button type="book-activity" class="btn btn-primary">BOKA</button>
+                </div>
+            </div>
+          </div>
+      </section>
+      <section class="ad">
+        <div class="advertisment">
+            <p style="font-weight: bold; font-family: inherit; font-size: 1em;">Annons</p>
+            <img src="/assets/images/friluftsframjandet_frontiercookset_1240x250-182593798.jpg" class="ad-img" alt="Annons">
+        </div>
+     </section>
+     <section class="engage">
+        <div class="engage-container">
+            <div class="engage-people">
+                <img src="/assets/images/medlem-medlemsformaner-kanadensare-818045259.jpg" alt="Friluftsklädda människor i en kajak" class="engage-img">
+                <h3 class="engage-title">Bli medlem och få sommaren på köpet</h3>
+                <p class="engage-text">Följ med oss på nästa äventyr! Blir du medlem nu så räcker ditt medlemskap till 31 augusti 2025, men du betalar bara för ett år. Välkommen till oss – och låt äventyret börja.</p>
+                <button type="engage" class="btn btn-primary">BLI MEDLEM</button>
+            </div>
+            <div class="engage-people">
+                <img src="assets/images/ledare-skal-att-bli-ledare-fika-grupp1555402537.jpg" alt="Glada friluftsklädda människor runt ett bord" class="engage-img">
+                <h3 class="engage-title">Bli ledare</h3>
+                <p class="engage-text">Varje år visar över 8500 ledare vägen ut i naturen för tusentals medlemmar. Vill du bli en av oss?</p>
+                <button type="engage" class="btn btn-primary">BLI LEDARE</button>
+            </div>
+        </div>
+     </section>
+     <section class="over-night-tips">
+        <h2>Våra bästa tips för en natt i naturen</h2>
+        <div class="tips-container">
+            <div class="tips">
+                <img src="/assets/images/hilleberg-351912618.jpg" class="tips-img-top" alt="...">
+                <div class="tips-body">
+                    <p class="tag">TESTER</p>
+                    <h5 class="tips-title">Vi testar tälttyper - så väljer du rätt</h5>
+                    <p class="tips-text">Stort eller lätt? Absid eller inte? Fyrmanna- eller singelvariant?...</p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="tips">
+                <img src="/assets/images/0friluftsteknik16-445926946.jpg" class="tips-img-top" alt="...">
+                <div class="tips-body">
+                    <p class="tag">GUIDER</p>
+                    <h5 class="tips-title">Bästa frukosten efter en natt i tält</h5>
+                    <p class="tips-text">Att äta dagens första måltid i naturen är för många vida känt so...</p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="tips">
+                <img src="/assets/images/ledare-satter-upp-talt-fjallen-521503560.jpg" class="tips-img-top" alt="...">
+                <div class="tips-body">
+                    <p class="tag">GUIDER</p>
+                    <h5 class="tips-title">Välja tältplats</h5>
+                    <p class="tips-text">Den perfekta tältplatsen kräver ibland lite letande, men det kan...</p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="tips">
+                <img src="/assets/images/biltillwebben-kopia150090336.jpg" class="tips-img-top" alt="...">
+                <div class="tips-body">
+                    <p class="tag">GUIDER</p>
+                    <h5 class="tips-title">Tälta med barn</h5>
+                    <p class="tips-text">För små äventyrare kan en natt utomhus vara ett riktigt stort...</p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="tips">
+                <img src="/assets/images/personer-kollar-kartan-i-talt-1488157137.png" class="tips-img-top" alt="...">
+                <div class="tips-body">
+                    <p class="tag">GUIDER</p>
+                    <h5 class="tips-title">Tält, vindskydd, tarp eller stuga - hur sover du?</h5>
+                    <p class="tips-text">Tält, vindskydd, hängmatta, under bar himmel. Under en gran, med...</p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+          </div>
+      </section>
+
+    </main>
+    <footer>
+        <div class="footer-container"> 
+            <div class="footer-child">
+                <ul class="footer-about-links">
+                    <li><a href="https://www.friluftsframjandet.se/om-oss/">Om oss</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/om-oss/kontakta-oss/">Kontakta oss</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/om-oss/jobba-hos-oss/">Jobba hos oss</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/engagera-dig/stod-oss/">Stöd oss</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/medlem/har-finns-vi/">Här finns vi</a></li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <input type="text" placeholder="Sök på webbplatsen">
+            </div>
+            <div class="footer-child">
+                <ul class="footer-media-links">
+                    <li><a href="https://www.friluftsframjandet.se/aktuellt/">Aktuellt</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/nyhetsbrev/">Nyhetsbrev</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/om-webbplatsen/">Om webbplatsen</a></li>
+                    <li><a href="https://www.friluftsframjandet.se/om-oss/in-english/">In English</a></li>
+                    <li><a href="#">Cookieinställningar</a></li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <i class="fa-brands fa-facebook" style="color:white"></i>
+                <i class="fa-brands fa-youtube" style="color:white"></i>
+                <i class="fa-brands fa-instagram" style="color:white"></i>
+                <img src="assets/images/90-konto-logo-white.svg" alt="90konto logo">
+            </div>
+            <hr style="color:white">
+        </div>  
+    </footer>
+    <!-- Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
