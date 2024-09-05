@@ -133,6 +133,8 @@ select, input {
 
 .card, .tips {
   color: var(--dark-blue);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   min-height: 23rem;
   width: 17rem;
   text-wrap: wrap;
@@ -142,6 +144,7 @@ select, input {
 
 .card-body, .tips-body {
   background-color: #ffffff;
+  padding-left: 10px;
 }
 
 .card-title {
@@ -162,6 +165,7 @@ select, input {
 .tips-text {
   font-family: inherit;
   font-size: 1em;
+  font-weight: 300;
   }
   
   /* Add rounded corners to the top left and the top right corner of the image */
@@ -372,14 +376,15 @@ div li {
 
   .card, .tips {
     width: 90%;
-    }
+    min-height: 27em;
+  }
 
   .ad-img {
     max-width: 100%;
   }
 
   .footer-container {
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 100%;
   }
 

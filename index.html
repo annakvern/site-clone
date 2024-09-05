@@ -31,14 +31,15 @@
         </ul>
         <!-- Only for smaller screens-->
         <div class="mobile-nav">
-            <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/hitta-aventyr/" class="mobile-nav-child"><i class="fa-solid fa-magnifying-glass" alt="Förstoringsglas-ikon"></i> Hitta äventyr</a>
-            <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/" class="mobile-nav-child"><i class="fa-regular fa-user" alt="Användare-ikon"></i> Logga in</a>
-            <i class="fa-solid fa-bars" class="mobile-nav-child" alt="Meny-ikon"></i>
+            <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/hitta-aventyr/" class="mobile-nav-child"><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</a>
+            <a href="https://www.friluftsframjandet.se/lat-aventyret-borja/" class="mobile-nav-child"><i class="fa-regular fa-user"></i> Logga in</a>
+            <i class="fa-solid fa-bars" class="mobile-nav-child"></i>
         </div>
       </nav>
       <div class="buttons">
-        <button type="menu-button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass" alt="Förstoringsglas-ikon"></i> Hitta äventyr</button>
-        <button type="menu-button" class="btn btn-primary"><i class="fa-regular fa-user" alt="Användare-ikon"></i> Logga in</button>
+        <!-- Buttons from Bootstrap -->
+        <button type="menu-button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</button>
+        <button type="menu-button" class="btn btn-primary"><i class="fa-regular fa-user"></i> Logga in</button>
       </div>
     </header>
     <main>
@@ -61,7 +62,7 @@
       <section class="form">
         <h2>Hitta äventyr</h2>
         <div class="form-elements">
-            <select name="type" id="type">
+            <select name="type" id="type" aria-label="Välj Verksamhetsområde">
                 <option value="" disabled selected>Typ av äventyr</option>
                 <option value="type-o1">Alla verksamhetsområden</option>
                 <option value="type-o2">Cykel</option>
@@ -69,7 +70,7 @@
                 <option value="type-o4">Friluftsevent</option>
                 <option value="type-o5">Friluftskunskap</option>
             </select>
-            <select name="targetgroup" id="targetgroup">
+            <select name="targetgroup" id="targetgroup" aria-label="Välj Målgrupp">
                 <option value="" disabled selected>Passar för</option>
                 <option value="type-o1">Alla målgrupper</option>
                 <option value="type-o2">Barn 0-6</option>
@@ -77,7 +78,7 @@
                 <option value="type-o4">Familj</option>
                 <option value="type-o5">Funktionsnedsättning</option>
             </select>
-            <select name="location" id="location">
+            <select name="location" id="location" aria-label="Välj Plats">
                 <option value="" disabled selected>Plats</option>
                 <option value="type-o1">Alla platser</option>
                 <option value="type-o2">Blekinge län</option>
@@ -99,6 +100,7 @@
       </section>
       <section class="adventures">
         <div class="card-container">
+            <!-- Card formatting from Bootstrap -->
             <div class="card">
                 <img src="/assets/images/kajak.jpg" class="card-img-top" alt="Människor i en kajak på en sjö">
                 <div class="card-body">
@@ -136,7 +138,7 @@
       <section class="ad">
         <div class="advertisment">
             <p style="font-weight: bold; font-family: inherit; font-size: 1em;">Annons</p>
-            <img src="/assets/images/friluftsframjandet_frontiercookset_1240x250-182593798.jpg" class="ad-img" alt="Annons">
+            <img src="/assets/images/friluftsframjandet_frontiercookset_1240x250-182593798.jpg" class="ad-img" alt="Annons av stormkök och utrustning">
         </div>
      </section>
      <section class="engage">
@@ -164,7 +166,7 @@
                     <p class="tag">TESTER</p>
                     <h5 class="tips-title">Vi testar tälttyper - så väljer du rätt</h5>
                     <p class="tips-text">Stort eller lätt? Absid eller inte? Fyrmanna- eller singelvariant?...</p>
-                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right" alt="pil till höger, ikon"></i></p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
             <div class="tips">
@@ -173,7 +175,7 @@
                     <p class="tag">GUIDER</p>
                     <h5 class="tips-title">Bästa frukosten efter en natt i tält</h5>
                     <p class="tips-text">Att äta dagens första måltid i naturen är för många vida känt so...</p>
-                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right" alt="pil till höger, ikon"></i></p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
             <div class="tips">
@@ -182,7 +184,7 @@
                     <p class="tag">GUIDER</p>
                     <h5 class="tips-title">Välja tältplats</h5>
                     <p class="tips-text">Den perfekta tältplatsen kräver ibland lite letande, men det kan...</p>
-                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right" alt="pil till höger, ikon"></i></p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
             <div class="tips">
@@ -191,7 +193,7 @@
                     <p class="tag">GUIDER</p>
                     <h5 class="tips-title">Tälta med barn</h5>
                     <p class="tips-text">För små äventyrare kan en natt utomhus vara ett riktigt stort...</p>
-                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right" alt="pil till höger, ikon"></i></p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
             <div class="tips">
@@ -200,7 +202,7 @@
                     <p class="tag">GUIDER</p>
                     <h5 class="tips-title">Tält, vindskydd, tarp eller stuga - hur sover du?</h5>
                     <p class="tips-text">Tält, vindskydd, hängmatta, under bar himmel. Under en gran, med...</p>
-                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right" alt="pil till höger, ikon"></i></p>
+                    <p class="read-more">LÄS MER <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
           </div>
@@ -232,9 +234,9 @@
                 </ul>
             </div>
             <div class="footer-child">
-                <i class="fa-brands fa-facebook" style="color:white" alt="Facebook-ikon"></i>
-                <i class="fa-brands fa-youtube" style="color:white" alt="Youtube-ikon"></i>
-                <i class="fa-brands fa-instagram" style="color:white" alt="Instagram-ikon"></i>
+                <i class="fa-brands fa-facebook" style="color:white"></i>
+                <i class="fa-brands fa-youtube" style="color:white"></i>
+                <i class="fa-brands fa-instagram" style="color:white"></i>
                 <img src="assets/images/90-konto-logo-white.svg" alt="90konto logo">
             </div>
             <hr style="height: 3px; width:90%; color:white">
