@@ -43,19 +43,28 @@ nav li {
   color: var(--dark-blue);
 }
 
-#logo{
+#logo {
   width: 152px;
   align-self: baseline;
   overflow: visible;
   position: relative;
 }
 
-button[type=menu-button]{
+button[type=menu-button] {
   background-color: #091B49;
   border: none;
   font-size: 13px;
   border-radius: 30px;
   padding: 15px 15px;
+}
+
+button[type=menu-button]:hover {
+  background-color: #091B49;
+  border: none;
+  font-size: 13px;
+  border-radius: 30px;
+  padding: 15px 15px;
+  margin-bottom: 0.2em;
 }
 
 video {
@@ -255,8 +264,9 @@ button[type=engage]{
   margin: 20px auto;
 }
 
-button[type=engage].hover {
+button[type=engage]:hover, button[type=book-activity]:hover {
   background-color: var(--blue);
+  margin: 20.5px auto;
 }
 
 footer {
