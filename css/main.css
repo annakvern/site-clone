@@ -176,6 +176,14 @@ select, input {
   font-size: 1em;
   font-weight: 300;
   }
+
+.tips:hover .read-more .fa-solid {
+  padding-left: 0.5em;
+}
+
+.tips:hover .read-more {
+  text-decoration: underline;
+}
   
   /* Add rounded corners to the top left and the top right corner of the image */
 .card-img-top, .engage-img, .tips-img-top {
@@ -272,28 +280,47 @@ button[type=engage]:hover, button[type=book-activity]:hover {
 footer {
   background-color: var(--blue);
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 10px;
+  max-width: 100%;
 }
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  margin: auto;
   box-sizing: border-box;
-  max-width: calc(4 * 17rem + 3 * 20px);
+  width: calc(4 * 17rem + 3 * 20px);
+  margin: 0 auto;
 }
 
-.footer-child {
-  flex: 1 1 calc(50% - 15px); /* Adjust the size of each div to fit within the container */
-  max-width: calc(50% - 15px);
-  box-sizing: border-box;
+.footer-child li {
+  font-size: 1.1em; 
+}
+
+i {
+  font-size: 30px;
+  padding: 10px 15px 0 0;
+}
+
+#nittiokonto {
+  width: auto; 
+  height:30px;
+  padding: 0;
 }
 
 label[for="text"]
 {
     display:none;
+}
+
+.ff-in-numbers li, .footer-text {
+  font-size: 0.8em;
+  color: #ffffff;
 }
 
 div li {
@@ -312,6 +339,14 @@ div li {
   text-decoration: underline;
   color: #ffffff;
   font-size: 0.9em;
+}
+
+footer hr {
+  width: calc(4 * 17rem + 3 * 20px);
+  height: 2px;
+  color: white;
+  margin: 20px auto;
+  opacity: 1;
 }
 
 @media screen (max-width: 1200px) {
@@ -356,6 +391,20 @@ div li {
 
   #logo{
     width: 80px;
+  }
+
+  video{ /*doesn't work properly...*/
+    transform: translate(-50%, -50%);
+    top: 50%;
+    bottom: 50%;   
+    
+    width: auto;
+    height: auto;
+    
+    margin: auto;
+    
+    min-width: 100%;
+    min-height: 100%;
   }
 
   .content, .engage, .over-night-tips{
