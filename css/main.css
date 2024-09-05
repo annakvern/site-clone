@@ -11,10 +11,9 @@ main {
 
 header{
   background-color: rgb(255, 255, 255);
-  max-width: calc(4 * 17rem + 3 * 20px);
-  margin: auto;
+  margin: auto 10px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 24px;
   height: 100px;
@@ -111,8 +110,7 @@ p {
 
 .form-elements {
   display: flex;
-  justify-content: space-between; /*varför fungerar ej?*/
-  border: 2px solid rgb(255, 0, 0);
+  justify-content: space-between; 
 }
 
 select, input {
@@ -279,6 +277,11 @@ footer {
   box-sizing: border-box;
 }
 
+label[for="text"]
+{
+    display:none;
+}
+
 div li {
   display:inline-block;
   padding-right: 20px;
@@ -314,6 +317,7 @@ div li {
 @media only screen and (max-width: 600px) {
   header{
     max-width: 100%;
+    justify-content: space-between;
     flex-wrap: wrap;
     height: 60px;
   }
