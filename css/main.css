@@ -21,6 +21,7 @@ header{
 
 .content h1 {
   font-size: 3em;
+  font-weight: 600;
 }
 
 nav li {
@@ -95,20 +96,22 @@ button[type=book-activity]{
   width: 90%;
   border: none;
   font-size: 1em;
-  border-radius: 30px;
+  border-radius: 2em;
   padding: 15px 15px;
+  align-items: center;
 }
 
 section[h2] {
   font-size: 0.8em; /*kan inte resize h2*/
 }
 
-.content, .engage, .over-night-tips{
+.content, .engage, .over-night-tips, .connect{
   color: var(--dark-blue);
   padding-top: 20px;
   margin: auto;
   box-sizing: border-box;
-  max-width: calc(4 * 17rem + 3 * 20px);
+  /* max-width: calc(4 * 17rem + 3 * 20px); */
+  max-width: 80%;
 }
 
 .form {
@@ -117,7 +120,8 @@ section[h2] {
   padding-bottom: 20px;
   margin: auto;
   box-sizing: border-box;
-  max-width: calc(4 * 17rem + 3 * 20px);
+  /* max-width: calc(4 * 17rem + 3 * 20px); */
+  max-width: 80%;
 }
 
 p {
@@ -152,6 +156,11 @@ select, input {
   gap: 20px;
 }
 
+.card-container {
+  max-width: 80%;
+  margin: auto;
+}
+
 .card, .tips {
   color: var(--dark-blue);
   font-family: "Inter", sans-serif;
@@ -161,6 +170,8 @@ select, input {
   text-wrap: wrap;
   overflow: hidden;
   border-radius: 7px; 
+  display:flex;
+  flex-direction: column;
   }
 
 .card-body, .tips-body {
@@ -223,40 +234,43 @@ select, input {
 }
 
 .ad {
-  display: flex;
-  justify-content: center;
   margin-top: 40px;
 }
 
 .advertisment {
+  max-width: 80%;
+  margin: auto;
+  object-fit: fill;
   flex-shrink: 1; /*kolla på denna...*/
 }
 
 .ad-img-main {
-  max-width: calc(4 * 17rem + 3 * 20px);
+  width: 100%;
 }
 
 .ad-img-mobile {
   display: none;
 }
 
-.engage-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.engage-container, .connect-container {
+  margin: 40px auto;
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-.engage-people {
+.engage-people, .connect-with-us {
   color: var(--dark-blue);
   flex: 1 1 calc(50% - 15px); /* Adjust the size of each div to fit within the container */
   max-width: calc(50% - 15px);
   box-sizing: border-box;
+}
+
+.engage-people {
   background-color: #EEEEEE;
 }
 
-.engage-img, .tips-img-top {
+.engage-img, .tips-img-top, .connect-img {
   width: 100%; 
   height: auto; 
   display: block; 
@@ -264,13 +278,13 @@ select, input {
   box-sizing: border-box;
 }
 
-.engage-title {
+.engage-title, .connect-title {
   font-family: inherit;
   font-size: 1.2em;
   padding: 10px 10px 0 15px;
 }
 
-.engage-text {
+.engage-text, .connect-text {
   font-family:inherit;
   font-size: 1em;
   line-height: 1.5;
