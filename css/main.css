@@ -165,18 +165,42 @@ select, input {
   color: var(--dark-blue);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  min-height: 23rem;
   width: 17rem;
   text-wrap: wrap;
   overflow: hidden;
-  border-radius: 7px; 
   display:flex;
   flex-direction: column;
   }
 
 .card-body, .tips-body {
   background-color: #ffffff;
-  padding-left: 10px;
+  border-radius: 7px; 
+  padding: 10px;
+  min-height: 14rem;
+}
+
+.card-tag-img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 35%;
+}
+
+.card-tag {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 30px;
+}
+
+.card-tag-text, .card-tag-price {
+  font-family: inherit;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.card-tag-text {
+  color: red;
 }
 
 .card-title {
@@ -196,7 +220,7 @@ select, input {
 
 .tips-text {
   font-family: inherit;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 300;
   }
 
