@@ -57,7 +57,7 @@ nav li {
   position: relative;
 }
 
-button[type=menu-button] {
+button[type=button] {
   background-color: #091B49;
   border: none;
   font-size: 13px;
@@ -65,7 +65,7 @@ button[type=menu-button] {
   padding: 15px 15px;
 }
 
-button[type=menu-button]:hover {
+button[type=button]:hover {
   background-color: #091B49;
   border: none;
   font-size: 13px;
@@ -76,20 +76,23 @@ button[type=menu-button]:hover {
 
 .video-container{
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   overflow: hidden;
   width: 100%;
-  height: 900px;
+  height: 35vw;
 }
 
 video {
   position: absolute;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%; 
 }
 
-button[type=book-activity]{
+button[type=submit]{
   position: absolute;
   bottom: 15px;
   background-color: var(--blue);
@@ -157,7 +160,7 @@ select, input {
 }
 
 .card-container {
-  max-width: 80%;
+  max-width: calc(4 * 17rem + 3 * 20px);
   margin: auto;
 }
 
@@ -277,7 +280,7 @@ select, input {
 }
 
 .engage-container, .connect-container {
-  margin: 40px auto;
+  margin: 40px auto 0 auto;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -285,13 +288,14 @@ select, input {
 
 .engage-people, .connect-with-us {
   color: var(--dark-blue);
-  flex: 1 1 calc(50% - 15px); /* Adjust the size of each div to fit within the container */
+  flex: 1 1 calc(50% - 15px); 
   max-width: calc(50% - 15px);
   box-sizing: border-box;
 }
 
 .engage-people {
   background-color: #EEEEEE;
+  border-radius: 10px;
 }
 
 .engage-img, .tips-img-top, .connect-img {
@@ -315,7 +319,7 @@ select, input {
   padding: 10px 10px 0 15px;
 }
 
-button[type=engage]{
+button[type=reset]{
   background-color: var(--blue);
   display: block;
   width: 80%;
@@ -326,7 +330,7 @@ button[type=engage]{
   margin: 20px auto;
 }
 
-button[type=engage]:hover, button[type=book-activity]:hover {
+button[type=submit]:hover, button[type=reset]:hover {
   background-color: var(--blue);
   margin: 20.5px auto;
 }
@@ -510,6 +514,10 @@ footer hr {
 
   #logo{
     width: 80px;
+  }
+
+  .video-container {
+    max-height: 600px;
   }
 
   .ad-img-main {
