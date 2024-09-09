@@ -21,7 +21,7 @@ header{
 
 .content h1 {
   font-size: 3em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 nav li {
@@ -142,13 +142,12 @@ p {
   justify-content: space-between; 
 }
 
-select, #activity-search {
+select, #activity-search, #web-search {
   font-family: inherit;
   font-size: 0.8em; /*fungerar inte*/
   color: var(--dark-blue);
   padding: 14px;
   width: 17rem;
-  justify-content: space-between;
   border-color: #E0E0E0;
   border-radius: 7px;
 }
@@ -504,11 +503,6 @@ footer hr {
       width: 80px;
   }
 
-  .content h1 {
-    font-size: 3em;
-    font-weight: 600;
-  }
-
   .content {
     padding-left: 15px;
   }
@@ -630,8 +624,13 @@ footer hr {
 
 @media only screen and (max-width: 600px) {
 
-  .video-container {
-    max-height: 600px;
+  .content h1 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .video-container{
+    height: 50vh;
   }
 
   .ad-img-main {
