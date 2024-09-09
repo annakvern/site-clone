@@ -83,6 +83,7 @@ button[type=button]:hover {
 }
 
 video {
+  max-width: 100%;
   position: absolute;
   height: auto;
   top: 50%;
@@ -141,7 +142,7 @@ p {
   justify-content: space-between; 
 }
 
-select, input {
+select, #activity-search {
   font-family: inherit;
   font-size: 0.8em; /*fungerar inte*/
   color: var(--dark-blue);
@@ -420,6 +421,7 @@ div li {
   left: 0;
   
 }
+
 .footer-about-links li a, .footer-media-links li a {
   text-decoration: underline;
   color: #ffffff;
@@ -427,7 +429,7 @@ div li {
 }
 
 footer hr {
-  width: calc(4 * 17rem + 3 * 20px);
+  width: 70vw;
   height: 2px;
   color: white;
   margin: 20px auto;
@@ -470,51 +472,163 @@ footer hr {
   color: #ffffff;
 }
 
-
-@media screen (max-width: 1200px) {
-
-
-}
-
-@media screen (max-width: 890px) {
-  
-}
-
-@media screen (max-width: 750px) {
-  
-}
-
-/* MOBILE VERSION */
-
-@media only screen and (max-width: 600px) {
+/* ADJUSTING RESPONSIVENESS TO SCREEN SIZES */
+/* Desktop */
+@media only screen and (max-width: 1200px) {
   header {
-    max-width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 60px;
+      max-width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: 60px;
   }
 
   .menu, .buttons {
-    display: none;
+      display: none;
   }
 
   .mobile-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
   }
 
   .mobile-nav-child {
-    font-size: 0.9em;
-    text-decoration: none;
-    color: var(--dark-blue);
-    margin: 0 auto 10px auto;
-    align-items: center;
+      font-size: 0.9em;
+      text-decoration: none;
+      color: var(--dark-blue);
+      margin: 0 auto 10px auto;
+      align-items: center;
   }
 
   #logo{
-    width: 80px;
+      width: 80px;
   }
+
+  .content h1 {
+    font-size: 3em;
+    font-weight: 600;
+  }
+
+  .content {
+    padding-left: 15px;
+  }
+
+  .form h2 {
+    font-size: 1.6em;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .form-elements {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  select, #activity-search {
+    width: 49%;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card, .tips {
+    width: 30%;
+  }
+
+  .card-tag-img {
+    top: 40%;
+  }
+
+  .footer-container-top {
+    flex-wrap: wrap;
+  }
+
+  .footer-media-and-search {
+    margin-left: 40px;
+  }
+
+  .short-facts {
+    width: 45%;
+  }
+
+  .footer-text {
+    padding-left: 30px;
+    text-wrap: wrap;
+  }
+
+  footer hr {
+    width: 90vw;
+  }
+
+}
+
+/* iPad */
+@media only screen and (max-width: 890px) {
+
+  .card-container {
+    justify-content: space-evenly;
+  }
+
+  .card, .tips {
+    width: 45%;
+  }
+
+  .footer-container-top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .footer-container-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-bottom-text {
+    text-align: center;
+    width: 80%;
+  }
+
+  #web-search {
+    width: 25rem;
+  }
+
+  .short-facts {
+    width: 45%;
+  }
+  .footer-about-links li a, .footer-media-links li a {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 0.8em;
+  }
+
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  .form {
+    max-width: 95%;
+  } 
+
+  .form-elements {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+
+  select, #activity-search {
+    padding: 16px;
+    width: 100%;
+  }
+  
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
 
   .video-container {
     max-height: 600px;
@@ -538,19 +652,6 @@ footer hr {
   p {
     font-size: 1.2em;
   }
-  
-  .form {
-    max-width: 90%;
-  }
-
-  .form-elements {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  select, input {
-    width: 100%;
-  }
 
   .card-container, .tips-container {
     flex-wrap: wrap;
@@ -568,6 +669,11 @@ footer hr {
   .footer-container {
     flex-wrap: wrap;
     max-width: 100%;
+  }
+
+  div li {
+    display: block;
+    padding-right: 20px;
   }
 
 
