@@ -332,7 +332,7 @@ button[type=reset]{
 
 button[type=submit]:hover, button[type=reset]:hover {
   background-color: var(--blue);
-  margin: 20.5px auto;
+  /* margin: 20.5px auto; */ 
 }
 
 /* FOOTER */
@@ -393,11 +393,6 @@ footer {
   padding: 0;
 }
 
-label[for="text"]
-{
-  display:none;
-}
-
 .footer-text {
   font-family: inherit;
   font-size: 0.9em;
@@ -428,7 +423,7 @@ div li {
 }
 
 footer hr {
-  width: 70vw;
+  width: calc(4 * 17rem + 3 * 20px);
   height: 2px;
   color: white;
   margin: 20px auto;
