@@ -79,7 +79,7 @@ button[type=menu-button]:hover {
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
-  height: 550px;
+  height: 900px;
 }
 
 video {
@@ -94,6 +94,7 @@ button[type=book-activity]{
   bottom: 15px;
   background-color: var(--blue);
   width: 90%;
+  margin: auto;
   border: none;
   font-size: 1em;
   border-radius: 2em;
@@ -101,8 +102,9 @@ button[type=book-activity]{
   align-items: center;
 }
 
-section[h2] {
-  font-size: 0.8em; /*kan inte resize h2*/
+.form h2 {
+  font-size: 1.6em;
+  padding-bottom: 15px;;
 }
 
 .content, .engage, .over-night-tips, .connect{
@@ -110,8 +112,7 @@ section[h2] {
   padding-top: 20px;
   margin: auto;
   box-sizing: border-box;
-  /* max-width: calc(4 * 17rem + 3 * 20px); */
-  max-width: 80%;
+  max-width: calc(4 * 17rem + 3 * 20px);
 }
 
 .form {
@@ -120,8 +121,7 @@ section[h2] {
   padding-bottom: 20px;
   margin: auto;
   box-sizing: border-box;
-  /* max-width: calc(4 * 17rem + 3 * 20px); */
-  max-width: 80%;
+  max-width: calc(4 * 17rem + 3 * 20px);
 }
 
 p {
@@ -209,7 +209,7 @@ select, input {
 }
   
   /* Add rounded corners to the top left and the top right corner of the image */
-.card-img-top, .engage-img, .tips-img-top {
+.card-img-top, .engage-img, .tips-img-top, .connect-img {
     border-radius: 7px 7px 0 0;
   }
 
@@ -238,7 +238,7 @@ select, input {
 }
 
 .advertisment {
-  max-width: 80%;
+  max-width: calc(4 * 17rem + 3 * 20px);
   margin: auto;
   object-fit: fill;
   flex-shrink: 1; /*kolla på denna...*/
@@ -307,54 +307,80 @@ button[type=engage]:hover, button[type=book-activity]:hover {
   margin: 20.5px auto;
 }
 
+/* FOOTER */
 footer {
-  background-color: var(--blue);
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 60px;
-  gap: 10px;
+  background-color: var(--blue);
+  height: 400px;
+  padding: 60px 0;
   max-width: 100%;
 }
 
-.footer-container {
+.footer-container-top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  box-sizing: border-box;
-  width: calc(4 * 17rem + 3 * 20px);
-  margin: 0 auto;
+  margin: auto;
+  max-width: calc(4 * 17rem + 3 * 20px);
 }
 
-.footer-child li {
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: content-box;
+}
+
+.footer-media-and-search {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  box-sizing: content-box;
+}
+
+.footer-about-links ul, .footer-media-links ul {
+  padding-left: 0 !important;
+}
+
+.footer-links li {
   font-size: 1.1em; 
 }
 
-.footer-child i {
+.footer-media i {
   font-size: 30px;
   padding: 10px 15px 0 0;
 }
 
 #nittiokonto {
   width: auto; 
-  height:30px;
+  height: 30px;
   padding: 0;
 }
 
 label[for="text"]
 {
-    display:none;
+  display:none;
 }
 
-.ff-in-numbers li, .footer-text {
-  font-size: 0.8em;
+.footer-text {
+  font-family: inherit;
+  font-size: 0.9em;
   color: #ffffff;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  max-width: 100%;
 }
 
 div li {
-  display:inline-block;
+  display: inline-block;
   padding-right: 20px;
 }
 
@@ -363,6 +389,7 @@ div li {
   font-family: Inter, system-ui, sans-serif;
   font-weight: 600;
   font-size: 16px;
+  left: 0;
   
 }
 .footer-about-links li a, .footer-media-links li a {
@@ -377,10 +404,48 @@ footer hr {
   color: white;
   margin: 20px auto;
   opacity: 1;
+  
 }
 
+.footer-container-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: calc(4 * 17rem + 3 * 20px);
+}
+
+.footer-bottom-text {
+  width: 49%;
+}
+
+.short-facts {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.short-facts-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.short-facts-text {
+  font-size: 0.7em;
+  font-weight: 300;
+  color:#ffffff;
+}
+
+.short-facts-number {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+
 @media screen (max-width: 1200px) {
-  
+
+
 }
 
 @media screen (max-width: 890px) {
@@ -394,7 +459,7 @@ footer hr {
 /* MOBILE VERSION */
 
 @media only screen and (max-width: 600px) {
-  header{
+  header {
     max-width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -415,7 +480,7 @@ footer hr {
     font-size: 0.9em;
     text-decoration: none;
     color: var(--dark-blue);
-    margin: auto;
+    margin: 0 auto 10px auto;
     align-items: center;
   }
 

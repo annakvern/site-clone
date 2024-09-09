@@ -38,12 +38,12 @@
       </nav>
       <div class="buttons">
         <!-- Buttons from Bootstrap -->
-        <button type="menu-button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Hitta äventyr</button>
-        <button type="menu-button" class="btn btn-primary"><i class="fa-regular fa-user"></i> Logga in</button>
+        <button type="menu-button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i>  Hitta äventyr</button>
+        <button type="menu-button" class="btn btn-primary"><i class="fa-regular fa-user"></i>  Logga in</button>
       </div>
     </header>
     <main>
-      <section class="video-background">
+      <section>
            <div class="video-container">
             <video controls autoplay loop muted>
             <source
@@ -221,54 +221,71 @@
             </div>
         </div>
      </section>
-
     </main>
     <footer>
-        <div class="footer-container"> 
-            <div class="footer-child">
-                <ul class="footer-about-links">
-                    <li><a href="https://www.friluftsframjandet.se/om-oss/">Om oss</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/om-oss/kontakta-oss/">Kontakta oss</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/om-oss/jobba-hos-oss/">Jobba hos oss</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/engagera-dig/stod-oss/">Stöd oss</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/medlem/har-finns-vi/">Här finns vi</a></li>
-                </ul>
+        <div class="footer-container-top">
+            <div class="footer-links-container"> 
+                <div class="footer-links">
+                    <ul class="footer-about-links">
+                        <li><a href="https://www.friluftsframjandet.se/om-oss/">Om oss</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/om-oss/kontakta-oss/">Kontakta oss</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/om-oss/jobba-hos-oss/">Jobba hos oss</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/engagera-dig/stod-oss/">Stöd oss</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/medlem/har-finns-vi/">Här finns vi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-media-links">
+                        <li><a href="https://www.friluftsframjandet.se/aktuellt/">Aktuellt</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/nyhetsbrev/">Nyhetsbrev</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/om-webbplatsen/">Om webbplatsen</a></li>
+                        <li><a href="https://www.friluftsframjandet.se/om-oss/in-english/">In English</a></li>
+                        <li><a href="#">Cookieinställningar</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-child">
-                <label for="text">Sök på webbplatsen</label>
-                <input type="text" placeholder="Sök på webbplatsen">
-            </div>
-        </div>
-        <div class="footer-container">
-            <div class="footer-child">
-                <ul class="footer-media-links">
-                    <li><a href="https://www.friluftsframjandet.se/aktuellt/">Aktuellt</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/nyhetsbrev/">Nyhetsbrev</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/om-webbplatsen/">Om webbplatsen</a></li>
-                    <li><a href="https://www.friluftsframjandet.se/om-oss/in-english/">In English</a></li>
-                    <li><a href="#">Cookieinställningar</a></li>
-                </ul>
-            </div>
-            <div class="footer-child">
-                <i class="fa-brands fa-facebook" style="color:white"></i>
-                <i class="fa-brands fa-youtube" style="color:white"></i>
-                <i class="fa-brands fa-instagram" style="color:white"></i>
-                <img src="assets/images/90-konto-logo-white.svg" id="nittiokonto" alt="90konto logo">
+            <div class="footer-media-and-search">
+                <div class="footer-search">
+                    <label for="text">Sök på webbplatsen</label>
+                    <input type="text" placeholder="Sök på webbplatsen">
+                </div> 
+                <div class="footer-media">
+                    <i class="fa-brands fa-facebook" style="color:white"></i>
+                    <i class="fa-brands fa-youtube" style="color:white"></i>
+                    <i class="fa-brands fa-instagram" style="color:white"></i>
+                    <img src="assets/images/90-konto-logo-white.svg" id="nittiokonto" alt="90konto logo">
+                </div>
             </div>
         </div>
         <hr> 
-        <div class="footer-container">
-            <div class="footer-child">
+        <div class="footer-container-bottom">
+            <div class="footer-bottom-text">
                 <p class="footer-text">Friluftsfrämjandet är en demokratisk, partipolitiskt och religiöst obunden ideell organisation. Sedan 1892 har vi främjat friluftslivet och värnat allemansrätten. </p>
                 <p class="footer-text">Låt äventyret börja!</p>
             </div>
-            <div class="footer-child">
-                <ul class="ff-in-numbers">
+            <div class="short-facts">
+                <div class="short-facts-box">
+                    <span class="short-facts-number">108 166</span>
+                    <span class="short-facts-text">MEDLEMMAR</span>
+                </div>
+                <div class="short-facts-box">
+                    <span class="short-facts-number">8657</span>
+                    <span class="short-facts-text">LEDARE</span>
+                </div>
+                <div class="short-facts-box">
+                    <span class="short-facts-number">412</span>
+                    <span class="short-facts-text">FÖRSKOLOR/SKOLOR</span>
+                </div>
+                <div class="short-facts-box">
+                    <span class="short-facts-number">295</span>
+                    <span class="short-facts-text">LOKALAVDELNINGAR</span>
+                </div>
+                    <!-- <ul class="ff-in-numbers">
                     <li>108 166 <br> MEDLEMMAR</li>
                     <li>8657 <br> LEDARE</li>
                     <li>412 <br> FÖRSKOLOR/SKOLOR</li>
                     <li>295 <br> LOKALAVDELNINGAR</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </footer>
