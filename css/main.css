@@ -151,12 +151,20 @@ select,
 #activity-search, 
 #web-search {
   font-family: inherit;
-  font-size: 0.8em; /*fungerar inte*/
+  font-size: 0.8em; 
   color: var(--dark-blue);
   padding: 14px;
   width: 17rem;
   border-color: #E0E0E0;
   border-radius: 7px;
+}
+
+input[type="search"] {
+  border: 1px solid #E0E0E0;
+}
+
+input[type="search"] placeholder {
+  color: var(--dark-blue);
 }
 
 .card-container {
@@ -172,6 +180,7 @@ select,
 }
 
 .card {
+  border-width: 0;
   position: relative;
   color: var(--dark-blue);
   font-family: "Inter", sans-serif;
@@ -185,10 +194,11 @@ select,
 
 .card-body {
   background-color: #ffffff;
-  border-width: 0;
   border-radius: 7px; 
   padding: 10px;
   min-height: 14rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .availability-tag {
@@ -266,6 +276,18 @@ select,
     border-radius: 7px 7px 0 0;
   }
 
+.tips-card-title {
+  font-family: inherit;
+  font-size: 1.2em;
+}
+
+.tips-card-text {
+  font-family: inherit;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
 .read-more {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -273,7 +295,7 @@ select,
   font-size: 0.8em;
   font-style: normal;
   color: var(--blue);
-  padding-bottom: 10px;
+  margin-top: auto;
 }
 
 .tag {
@@ -313,7 +335,8 @@ select,
   gap: 15px;
 }
 
-.engage-people, .connect-with-us {
+.engage-people, 
+.connect-with-us {
   color: var(--dark-blue);
   flex: 1 1 calc(50% - 15px); 
   max-width: calc(50% - 15px);
@@ -325,7 +348,9 @@ select,
   border-radius: 10px;
 }
 
-.engage-img, .tips-img-top, .connect-img {
+.engage-img, 
+.tips-img-top, 
+.connect-img {
   width: 100%; 
   height: auto; 
   display: block; 
@@ -333,7 +358,8 @@ select,
   box-sizing: border-box;
 }
 
-.engage-title, .connect-title {
+.engage-title, 
+.connect-title {
   font-family: inherit;
   font-size: 1.2em;
   padding: 10px 10px 0 15px;
