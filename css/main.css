@@ -3,6 +3,7 @@
 :root {
   --dark-blue: #081b49;
   --blue: #4377BB;
+  --dark-button: #091B49;
 }
 
 main {
@@ -58,7 +59,7 @@ nav li {
 }
 
 button[type=button] {
-  background-color: #091B49;
+  background-color: var(--dark-button);
   border: none;
   font-size: 13px;
   border-radius: 30px;
@@ -66,7 +67,7 @@ button[type=button] {
 }
 
 button[type=button]:hover {
-  background-color: #091B49;
+  background-color: var(--dark-button);
   border: none;
   font-size: 13px;
   border-radius: 30px;
@@ -171,7 +172,7 @@ select, #activity-search, #web-search {
   width: 17rem;
   text-wrap: wrap;
   overflow: hidden;
-  display:flex;
+  display: flex;
   flex-direction: column;
   }
 
@@ -180,6 +181,9 @@ select, #activity-search, #web-search {
   border-radius: 7px; 
   padding: 10px;
   min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-tag-img {
@@ -247,7 +251,6 @@ select, #activity-search, #web-search {
   font-size: 0.8em;
   font-style: normal;
   color: var(--blue);
-  padding-bottom: 10px;
 }
 
 .tag {
@@ -375,7 +378,7 @@ footer {
 }
 
 .footer-about-links ul, .footer-media-links ul {
-  padding-left: 0 !important;
+  padding-left: 0;
 }
 
 .footer-links li {
