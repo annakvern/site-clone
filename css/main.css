@@ -28,7 +28,6 @@ nav li {
 .menu {
   list-style-type: none;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 1em;
   letter-spacing: 1px;
@@ -174,7 +173,6 @@ input[type="search"]::placeholder {
   position: relative;
   color: var(--dark-blue);
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   width: 17rem;
   text-wrap: wrap;
   overflow: hidden;
@@ -288,7 +286,6 @@ button[type=submit]:hover {
 
 .read-more {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 0.8em;
   font-style: normal;
@@ -298,7 +295,6 @@ button[type=submit]:hover {
 
 .tag {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 0.8em;
   font-style: normal;
